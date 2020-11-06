@@ -1,0 +1,15 @@
+<odoo>
+	<data>
+		<template id="assets_backend_test" name="Soft Site" inherit_id="web.assets_backend">
+			<xpath expr="." position="inside">
+
+			</xpath>
+		</template>
+
+		<template id="soft_site.new_homepage" inherit_id="website.homepage">
+	        <xpath expr="//div[@id='wrap']" position="replace">
+	        	<div class="container"><h1>Soft site</h1></div>
+	        </xpath>
+	    </template>
+	</data>
+</odoo>
