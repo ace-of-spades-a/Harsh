@@ -24,7 +24,7 @@ class Product(models.Model):
     desc = models.CharField(max_length=1000)
     product_categ_id = models.ForeignKey(ProductCategory, on_delete=models.CASCADE)
     product_img = models.ImageField(upload_to="gallary", null=True, blank=True)
-
+    
     @property
     def thumbnail_preview(self):
         if self.product_img:

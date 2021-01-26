@@ -20,3 +20,6 @@ def validate_username(request):
         ProductCategory.objects.filter(prodcut_categ=categ)
         import pdb;pdb.set_trace()
     return render(request)
+
+def test(request):
+    import pdb;pdb.set_trace()

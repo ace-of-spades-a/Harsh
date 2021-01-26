@@ -723,3 +723,10 @@ label.error {
   right: 25px;
   z-index: 9;
 }
+
+/* added by Devloper ER. Harsh Gupta*/
+
+.img-product{
+  width: auto !important;
+  height: -webkit-fill-available !important;
+}
