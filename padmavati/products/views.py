@@ -17,9 +17,11 @@ def index(request):
 def validate_username(request):
     if request:
         categ = request.GET.get('categ')
-        ProductCategory.objects.filter(prodcut_categ=categ)
-        import pdb;pdb.set_trace()
-    return render(request)
+        Product_categs = ProductCategory.objects.all()
+        product_categ = ProductCategory.objects.get(prodcut_categ = categ)
+        products = Product.objects.filter(product_categ_id = product_categ.id)
+    return render(request, 'index/index.html', {'products' : products, 'product_catg' : Product_categs})
+    # return render(products)
 
 def test(request):
     import pdb;pdb.set_trace()
