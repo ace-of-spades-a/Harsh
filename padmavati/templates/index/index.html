@@ -124,7 +124,7 @@
 				<!-- end single slide -->
 
 				<!-- single slide -->
-				<div class="item" style="background-image: url({% static 'img/banner.jpg' %});">
+				<div class="item" style="background-image: url({% static 'img/banner2.jpg' %});">
 					<div class="carousel-caption">
 						<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">
 							Meet<span> Padmavati Export</span>!</h2>
@@ -276,9 +276,9 @@
 			<figure class="{{pro.product_categ_id.id}} mix work-item">
 				<img class="img-thumbnail rounded" src="{{pro.product_img.url}}" alt="">
 				<figcaption class="overlay">
-					<a class="fancybox" rel="works" title="Write Your Image Caption Here"
-						href="{% static 'img/works/item-1.jpg' %}"><i class="fa fa-eye fa-lg"></i></a>
-					<h4>{{pro.product_categ_id.id}}</h4>
+					<a class="fancybox" rel="works" title="{{pro.name}}"
+						href="{{pro.product_img.url}}"><i class="fa fa-eye fa-lg"></i></a>
+					<h4>{{pro}}</h4>
 					<p>{{ pro.price }}</p>
 				</figcaption>
 			</figure>

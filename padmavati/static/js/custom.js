@@ -35,6 +35,7 @@ $(document).ready(function(){
             $("#navigation").css("background-color","#0EB493");
         } else {
             $("#navigation").css("background-color","rgba(16, 22, 54, 0.2)");
+            // $("#navigation").css("background-color","rgba(153, 102, 255)");
         }
     });
 	
